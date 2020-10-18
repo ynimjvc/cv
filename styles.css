@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('./font/fontello.eot?34441047');
+    src: url('./font/fontello.eot?34441047#iefix') format('embedded-opentype'),
+         url('./font/fontello.woff?34441047') format('woff'),
+         url('./font/fontello.ttf?34441047') format('truetype'),
+         url('./font/fontello.svg?34441047#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: auto;
+    max-width: 1024px;
+    display: grid;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar content";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    color: #4a4a4a;
+}
+
+a {
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.2rem 0;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+h2:first-child {
+    margin-top: 0;
+}
+
+header {
+    grid-area: header;
+    padding: 1rem 1rem 2rem 1rem;
+    text-align: right;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(#ffffff 80%, transparent);
+}
+
+aside {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+aside > section {
+    padding: 1rem;
+}
+
+aside > section > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    grid-area: content;
+    padding: 2rem;
+}
+
+main ul {
+    list-style: none;
+}
+
+.contacts:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.contacts.gmail:before {
+    font-size: 75%;
+    content: '\6d';
+}
+.contacts.skype:before {
+    content: '\e0e2';
+}
+.contacts.linkedin:before {
+    content: '\f05c';
+}
+.contacts.telegram:before {
+    font-size: 120%;
+    content: '\f2c6';
+}
+
+.techskills {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 12rem;
+}
+
+
+.techskills > * {
+    margin: 0.2rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.techskills .js {
+    background-image: url(logos/js.svg);
+}
+
+.techskills .node {
+    background-image: url(logos/node.svg);
+}
+
+.techskills .react {
+    background-image: url(logos/react.svg);
+}
+
+.techskills .webpack {
+    background-image: url(logos/webpack.svg);
+}
+
+.techskills .angular {
+    background-image: url(logos/angular.svg);
+}
+
+.techskills .cucumber {
+    background-image: url(logos/cucumber.svg);
+}
+
+.techskills .git {
+    background-image: url(logos/git.svg);
+}
+
+.techskills .gitlab {
+    background-image: url(logos/gitlab.svg);
+}
+
+.techskills .gulp {
+    background-image: url(logos/gulp.svg);
+}
+
+.techskills .jira {
+    background-image: url(logos/jira.svg);
+}
+
+.techskills .jss {
+    background-image: url(logos/jss.svg);
+}
+
+.techskills .postcss {
+    background-image: url(logos/postcss.svg);
+}
+
+.techskills .redux {
+    background-image: url(logos/redux.svg);
+}
+
+.techskills .typescript {
+    background-image: url(logos/typescript.svg);
+}
+
+.techskills .vuejs {
+    background-image: url(logos/vuejs.svg);
+}
